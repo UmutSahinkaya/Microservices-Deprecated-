@@ -50,3 +50,8 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\S
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\System.Text.Encodings.Web.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\System.Text.Json.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\Shared.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Catalog\Services.Catalog\bin\Debug\net5.0\Shared.pdb
