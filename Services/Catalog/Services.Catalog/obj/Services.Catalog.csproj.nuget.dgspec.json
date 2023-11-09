@@ -143,6 +143,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "NETStandard.Library": {
               "privateAssets": "all"
             }

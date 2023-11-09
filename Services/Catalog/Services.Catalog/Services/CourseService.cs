@@ -54,7 +54,7 @@ namespace Services.Catalog.Services
             return Response<CourseDto>.Success(_mapper.Map<CourseDto>(course), 200);
         }
 
-        public async Task<Response<List<CourseDto>>> GetAllByUserId(string UserId)
+        public async Task<Response<List<CourseDto>>> GetAllByUserIdAsync(string UserId)
         {
             var courses = await _courseCollection.Find<Course>(x => x.UserId == UserId).ToListAsync();
             if (courses.Any())
