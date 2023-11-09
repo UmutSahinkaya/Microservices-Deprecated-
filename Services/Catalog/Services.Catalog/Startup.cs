@@ -29,15 +29,17 @@ namespace Services.Catalog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICourseService, CourseService>();
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
 
+            services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
+
             services.AddSingleton<IDatabaseSettings>(sp =>
             {
-                return sp.GetRequiredService<DatabaseSettings>();
+                return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
             });
 
-            services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
 
             services.AddSwaggerGen(c =>
             {

@@ -126,6 +126,10 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -143,9 +147,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "NETStandard.Library": {
               "privateAssets": "all"
             }
