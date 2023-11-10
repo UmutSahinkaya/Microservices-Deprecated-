@@ -49,6 +49,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.7.4, )"
