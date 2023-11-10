@@ -30,7 +30,7 @@ namespace Services.PhotoStock
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
                 opt.Authority = Configuration["IdentityServerURL"];
-                opt.Audience = "resource_photo_stock";
+                opt.Audience = "photo_stock_catalog";
                 opt.RequireHttpsMetadata = false;
             });
             services.AddControllers(opt =>
