@@ -4,6 +4,7 @@
 
 using IdentityServer4;
 using IdentityServer4.Models;
+using System;
 using System.Collections.Generic;
 
 namespace IdentityServer
@@ -19,7 +20,10 @@ namespace IdentityServer
         public static IEnumerable<IdentityResource> IdentityResources =>
                    new IdentityResource[]
                    {
-
+                       new IdentityResources.Email(),
+                       new IdentityResources.OpenId(),
+                       new IdentityResources.Profile(),
+                       new IdentityResource(){Name="roles",DisplayName="Roles",Description="Kullanıcı rolleri",UserClaims=new []{"role"}}
                    };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -40,6 +44,19 @@ namespace IdentityServer
                     ClientSecrets={new Secret("secret".Sha256())},
                     AllowedGrantTypes=GrantTypes.ClientCredentials,
                     AllowedScopes={ "catalog_fullpermission", "photo_stock_fullpermission",IdentityServerConstants.LocalApi.ScopeName }
+                },
+                new Client
+                {
+                    ClientName="ASP.Net Core MVC",
+                    ClientId="WebMvcClientForUser",
+                    AllowOfflineAccess=true,
+                    ClientSecrets={new Secret("secret".Sha256())},
+                    AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
+                    AllowedScopes={ IdentityServerConstants.LocalApi.ScopeName,IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, IdentityServerConstants.StandardScopes.OfflineAccess,"roles" },
+                    AccessTokenLifetime=1*60*60,
+                    RefreshTokenExpiration=TokenExpiration.Absolute,
+                    AbsoluteRefreshTokenLifetime=(int)(DateTime.Now.AddDays(60)-DateTime.Today).TotalSeconds,
+                    RefreshTokenUsage=TokenUsage.ReUse
                 }
             };
     }
