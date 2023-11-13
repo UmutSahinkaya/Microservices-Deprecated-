@@ -34,6 +34,7 @@
       "Services.Discount/1.0.0": {
         "dependencies": {
           "Dapper.Contrib": "2.0.78",
+          "Npgsql": "5.0.17",
           "Shared": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "5.0.0.0",
@@ -966,6 +967,20 @@
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Npgsql/5.0.17": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Npgsql.dll": {
+            "assemblyVersion": "5.0.17.0",
+            "fileVersion": "5.0.17.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Npgsql.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -4054,6 +4069,13 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "Npgsql/5.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2Aymb72ZXX2V8rmcP+fcXkCPpb7SNAWbtP/TRd3LsdlKRuUbyuVjttD1cKrIHXKgkmuw3eLqNLQtvnoqOUZZgw==",
+      "path": "npgsql/5.0.17",
+      "hashPath": "npgsql.5.0.17.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

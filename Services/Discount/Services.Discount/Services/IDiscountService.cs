@@ -12,6 +12,6 @@ namespace Services.Discount.Services
         Task<Response<NoContent>> SaveAsync(Models.Discount discount);
         Task<Response<NoContent>> UpdateAsync(Models.Discount discount);
         Task<Response<NoContent>> DeleteAsync(int id);
-        Task<Response<Models.Discount>>GetByCodeandUserIdAsync(string code, string userId);
+        Task<Response<Models.Discount>>GetByCodeAndUserIdAsync(string code, string userId);
     }
 }
