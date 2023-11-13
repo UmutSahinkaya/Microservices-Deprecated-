@@ -1332,6 +1332,22 @@
           }
         }
       },
+      "Npgsql/5.0.17": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "compile": {
+          "lib/net5.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -4442,6 +4458,26 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "Npgsql/5.0.17": {
+      "sha512": "2Aymb72ZXX2V8rmcP+fcXkCPpb7SNAWbtP/TRd3LsdlKRuUbyuVjttD1cKrIHXKgkmuw3eLqNLQtvnoqOUZZgw==",
+      "type": "package",
+      "path": "npgsql/5.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.5.0.17.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8642,6 +8678,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Dapper.Contrib >= 2.0.78",
+      "Npgsql >= 5.0.17",
       "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -8699,6 +8736,10 @@
           "Dapper.Contrib": {
             "target": "Package",
             "version": "[2.0.78, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[5.0.17, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

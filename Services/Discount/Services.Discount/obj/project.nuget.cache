@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7WUlU5eTRTtaQrB1smBcmbX25Ky8Qaoxp3duel+jGwGznVzKz9wIlC/fL5IveC4fC+q6sQOgOSgLlsGcQ86PNg==",
+  "dgSpecHash": "/BdjuTQ71cNpGCK5YrZII9Fo/IKIDPrckYH71/D8RBEYpZb1t6DhEq8h4v0MyNBeIwZFiA4wVq+nMRzp9uKwFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Discount\\Services.Discount\\Services.Discount.csproj",
   "expectedPackageFiles": [
@@ -81,6 +81,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\npgsql\\5.0.17\\npgsql.5.0.17.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
