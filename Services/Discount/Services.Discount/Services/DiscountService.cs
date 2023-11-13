@@ -34,7 +34,7 @@ namespace Services.Discount.Services
 
         public async Task<Response<Models.Discount>> GetByCodeAndUserIdAsync(string code, string userId)
         {
-            var discounts = await _dbconnection.QueryAsync("select * from discount Where userid=@UserId and code=@Code", new
+            var discounts = await _dbconnection.QueryAsync<Models.Discount>("select * from discount Where userid=@UserId and code=@Code", new
             {
                 UserId = userId,
                 Code = code
@@ -47,7 +47,7 @@ namespace Services.Discount.Services
 
         public async Task<Response<Models.Discount>> GetByIdAsync(int id)
         {
-            var discount = (await _dbconnection.QueryAsync("Select * from discount where id=@Id", new { Id = id })).SingleOrDefault();
+            var discount = (await _dbconnection.QueryAsync<Models.Discount>("select * from discount where id=@Id", new { Id = id })).SingleOrDefault();
             if (discount == null)
                 return Response<Models.Discount>.Fail("Discount not found",404);
             return Response<Models.Discount>.Success(discount, 200);
