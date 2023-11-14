@@ -1,0 +1,9 @@
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\bin\Debug\netstandard2.1\Services.Order.Domain.deps.json
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\bin\Debug\netstandard2.1\Services.Order.Domain.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\bin\Debug\netstandard2.1\Services.Order.Domain.pdb
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\obj\Debug\netstandard2.1\Services.Order.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\obj\Debug\netstandard2.1\Services.Order.Domain.AssemblyInfoInputs.cache
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\obj\Debug\netstandard2.1\Services.Order.Domain.AssemblyInfo.cs
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\obj\Debug\netstandard2.1\Services.Order.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\obj\Debug\netstandard2.1\Services.Order.Domain.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\obj\Debug\netstandard2.1\Services.Order.Domain.pdb

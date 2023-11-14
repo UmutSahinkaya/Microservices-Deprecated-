@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Services.Order.Domain
+build_property.ProjectDir = C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Domain\
