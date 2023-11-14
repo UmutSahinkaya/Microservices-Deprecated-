@@ -114,6 +114,9 @@
               },
               "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Infrastructure\\Services.Order.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Infrastructure\\Services.Order.Infrastructure.csproj"
+              },
+              "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Shared\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Shared\\Shared\\Shared.csproj"
               }
             }
           }
@@ -257,6 +260,12 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

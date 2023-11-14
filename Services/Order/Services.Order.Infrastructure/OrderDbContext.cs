@@ -10,6 +10,12 @@ namespace Services.Order.Infrastructure
         public const string DEFAULT_SCHEMA = "ordering";
         public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options) { }
 
+        public override int SaveChanges()
+        {
+            //event
+            return base.SaveChanges();
+        }
+
         public DbSet<Domain.OrderAggregate.Order> Orders { get; set; }
         public DbSet<Domain.OrderAggregate.OrderItem> OrderItems { get; set; }
 

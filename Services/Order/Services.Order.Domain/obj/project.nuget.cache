@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "WmcC3/oBnAq9cecRnAMAFO/U/MjUoR8oO7nM237LMRbnngOfFvz5G+l3jD78zX8BbKKLxUdSrUwgjuFsckztzg==",
+  "dgSpecHash": "PQuwVYbMcqJm+WeEOCyTa84K6fp2M4VHO0m8rt8m/jq3AcAe98RXNHAoDA6V6J9J9Q2Q8Px/UDI2eT0/cvYe/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Domain\\Services.Order.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
