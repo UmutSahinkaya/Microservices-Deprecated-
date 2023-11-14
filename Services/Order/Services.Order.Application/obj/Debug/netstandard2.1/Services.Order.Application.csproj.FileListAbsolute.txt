@@ -7,3 +7,11 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\S
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\obj\Debug\netstandard2.1\Services.Order.Application.csproj.CoreCompileInputs.cache
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\obj\Debug\netstandard2.1\Services.Order.Application.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\obj\Debug\netstandard2.1\Services.Order.Application.pdb
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\bin\Debug\netstandard2.1\Services.Order.Domain.Core.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\bin\Debug\netstandard2.1\Services.Order.Domain.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\bin\Debug\netstandard2.1\Services.Order.Infrastructure.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\bin\Debug\netstandard2.1\Services.Order.Domain.pdb
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\bin\Debug\netstandard2.1\Services.Order.Infrastructure.pdb
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\bin\Debug\netstandard2.1\Services.Order.Domain.Core.pdb
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\obj\Debug\netstandard2.1\Services.Order.Application.csproj.AssemblyReference.cache
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.Application\obj\Debug\netstandard2.1\Services.Order.Application.csproj.CopyComplete

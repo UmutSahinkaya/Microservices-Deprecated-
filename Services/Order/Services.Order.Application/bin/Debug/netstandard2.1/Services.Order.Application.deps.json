@@ -8,14 +8,54 @@
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
       "Services.Order.Application/1.0.0": {
+        "dependencies": {
+          "Services.Order.Domain": "1.0.0",
+          "Services.Order.Infrastructure": "1.0.0"
+        },
         "runtime": {
           "Services.Order.Application.dll": {}
+        }
+      },
+      "Services.Order.Domain/1.0.0": {
+        "dependencies": {
+          "Services.Order.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "Services.Order.Domain.dll": {}
+        }
+      },
+      "Services.Order.Domain.Core/1.0.0": {
+        "runtime": {
+          "Services.Order.Domain.Core.dll": {}
+        }
+      },
+      "Services.Order.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Services.Order.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Services.Order.Infrastructure.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Services.Order.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services.Order.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services.Order.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services.Order.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
