@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vmij7PafUrYzw5D1n6XoGG2OXHNnd/NRV6vRF7E8QFlyd7khqYyTOQjpuGAEyA+p3DRd9VHTRVtVdlKymo94XA==",
+  "dgSpecHash": "TLt7goyh5LCbSoH6kE7GIhsGu5/nJTp4WP4GDj1nQsKDR/XGTF799QQ8lc0jNYUImHrhjdm4XEFh7pnp6QFMKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Application\\Services.Order.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
     "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.17\\microsoft.entityframeworkcore.5.0.17.nupkg.sha512",
