@@ -1,0 +1,1 @@
+﻿docker run --name discountdb -e POSTGRES_PASSWORD=Password12* -p 5432:5432 -d postgres:12.16-bullseye
