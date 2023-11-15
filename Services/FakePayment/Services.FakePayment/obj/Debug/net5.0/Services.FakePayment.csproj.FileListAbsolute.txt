@@ -47,3 +47,10 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\S
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\System.Text.Json.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Shared.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Shared.pdb
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\FakePayment\Services.FakePayment\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
