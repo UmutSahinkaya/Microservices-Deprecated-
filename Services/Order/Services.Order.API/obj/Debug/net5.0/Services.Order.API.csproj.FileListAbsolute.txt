@@ -91,3 +91,4 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\S
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.API\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Services\Order\Services.Order.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
