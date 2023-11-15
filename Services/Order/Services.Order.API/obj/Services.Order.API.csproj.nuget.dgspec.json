@@ -35,9 +35,6 @@
             "projectReferences": {
               "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Application\\Services.Order.Application.csproj": {
                 "projectPath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Application\\Services.Order.Application.csproj"
-              },
-              "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Shared\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Shared\\Shared\\Shared.csproj"
               }
             }
           }

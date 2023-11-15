@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Services.Order.Infrastructure;
+using Shared.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +29,8 @@ namespace Services.Order.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<ISharedIdentityService,SharedIdentityService>();
+            services.AddMediatR(typeof(Application.Handlers.CreateOrderCommandHandler).Assembly);
             services.AddDbContext<OrderDbContext>(opt =>
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), configure =>
@@ -34,6 +38,8 @@ namespace Services.Order.API
                     configure.MigrationsAssembly("Services.Order.Infrastructure");
                 });
             });
+            services.AddHttpContextAccessor();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

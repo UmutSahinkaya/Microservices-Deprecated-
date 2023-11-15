@@ -10514,7 +10514,6 @@
     "net5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Services.Order.Application >= 1.0.0",
-      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -10554,9 +10553,6 @@
           "projectReferences": {
             "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Application\\Services.Order.Application.csproj": {
               "projectPath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Services\\Order\\Services.Order.Application\\Services.Order.Application.csproj"
-            },
-            "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Shared\\Shared\\Shared.csproj"
             }
           }
         }
