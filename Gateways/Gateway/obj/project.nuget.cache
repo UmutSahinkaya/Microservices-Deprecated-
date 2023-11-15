@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "7/WNqkubvGGZ+Kj5Kw+t7VV42YYlS/bAFJMLK6vP9KpiOvCWvuRnf2asuGtbYDZO+lBtalspK/gCzW7Kwlp3Dw==",
+  "dgSpecHash": "q92ZEqIE47wHCajDtIwHYhKKkhUtciATuVa+UQp4visApEsZO4VnRW942WK6jQqrfeb53cckNDvcWorirt6jGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Umut.Sahinkaya\\source\\repos\\UmutSahinkaya\\Microservices\\Microservices\\Gateways\\Gateway\\Gateway.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.0\\microsoft.aspnetcore.jsonpatch.5.0.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\5.0.0\\microsoft.aspnetcore.middlewareanalysis.5.0.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.10\\microsoft.extensions.diagnosticadapter.3.1.10.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\ocelot\\17.0.1\\ocelot.17.0.1.nupkg.sha512",
+    "C:\\Users\\Umut.Sahinkaya\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }
