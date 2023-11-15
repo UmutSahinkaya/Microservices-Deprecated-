@@ -37,3 +37,10 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\G
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\obj\Debug\net5.0\Gateway.csproj.CopyComplete
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\configuration.development.json
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\configuration.production.json
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\Gateways\Gateway\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
