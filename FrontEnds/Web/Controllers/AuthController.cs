@@ -15,6 +15,7 @@ namespace Web.Controllers
             _identityService = identityService;
         }
 
+        [HttpGet]
         public IActionResult SignIn()
         {
             return View();
