@@ -32,9 +32,41 @@ namespace Web.Services
             _serviceApiSettings = serviceApiSettings.Value;
         }
 
-        public Task<TokenResponse> GetAccessTokenByRefreshToken()
+        public async Task<TokenResponse> GetAccessTokenByRefreshToken()
         {
-            throw new System.NotImplementedException();
+            var disco = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
+            {
+                Address = _serviceApiSettings.BaseUri,
+                Policy = new DiscoveryPolicy { RequireHttps = false }
+            });
+            if (disco.IsError)
+                throw disco.Exception;
+
+            var refreshToken = await _contextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.RefreshToken);
+
+            RefreshTokenRequest refreshTokenRequest = new()
+            {
+                ClientId = _clientSettings.WebClientForUser.ClientId,
+                ClientSecret = _clientSettings.WebClientForUser.ClientSecret,
+                RefreshToken = refreshToken,
+                Address = disco.TokenEndpoint
+            };
+            var token = await _httpClient.RequestRefreshTokenAsync(refreshTokenRequest);
+            if (!token.IsError)
+                return null;
+
+            var authenticationTokens = new List<AuthenticationToken>()
+            {
+                new AuthenticationToken{Name=OpenIdConnectParameterNames.AccessToken,Value=token.AccessToken},
+                new AuthenticationToken{Name=OpenIdConnectParameterNames.RefreshToken,Value=token.RefreshToken},
+                new AuthenticationToken{Name=OpenIdConnectParameterNames.ExpiresIn,Value=DateTime.Now.AddSeconds(token.ExpiresIn).ToString("o",CultureInfo.InvariantCulture)}
+            };
+            var authenticationResult = await _contextAccessor.HttpContext.AuthenticateAsync();
+            var properties=authenticationResult.Properties;
+            properties.StoreTokens(authenticationTokens);
+
+            await _contextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, authenticationResult.Principal,properties);
+            return token;
         }
 
         public Task RevokeRefreshToken()
@@ -44,10 +76,10 @@ namespace Web.Services
 
         public async Task<Response<bool>> SignIn(SigninInput signinInput)
         {
-            var disco=await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
+            var disco = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
             {
-                Address=_serviceApiSettings.BaseUri,
-                Policy=new DiscoveryPolicy { RequireHttps=false}
+                Address = _serviceApiSettings.BaseUri,
+                Policy = new DiscoveryPolicy { RequireHttps = false }
             });
             if (disco.IsError)
                 throw disco.Exception;
@@ -63,8 +95,8 @@ namespace Web.Services
 
             if (token.IsError)
             {
-                var responseContent=await token.HttpResponse.Content.ReadAsStringAsync();
-                var errorDto=JsonSerializer.Deserialize<ErrorDto>(responseContent,new JsonSerializerOptions { PropertyNameCaseInsensitive=true});
+                var responseContent = await token.HttpResponse.Content.ReadAsStringAsync();
+                var errorDto = JsonSerializer.Deserialize<ErrorDto>(responseContent, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 return Response<bool>.Fail(errorDto.Errors, 400);
             }
             var userInfoRequest = new UserInfoRequest
@@ -72,12 +104,12 @@ namespace Web.Services
                 Token = token.AccessToken,
                 Address = disco.UserInfoEndpoint
             };
-            var userInfo=await _httpClient.GetUserInfoAsync(userInfoRequest);
-            if(userInfo.IsError)
+            var userInfo = await _httpClient.GetUserInfoAsync(userInfoRequest);
+            if (userInfo.IsError)
                 throw userInfo.Exception;
 
-            ClaimsIdentity claimsIdentity=new ClaimsIdentity(userInfo.Claims,CookieAuthenticationDefaults.AuthenticationScheme,"name","role");
-            ClaimsPrincipal claimPrincipal=new ClaimsPrincipal(claimsIdentity);
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity(userInfo.Claims, CookieAuthenticationDefaults.AuthenticationScheme, "name", "role");
+            ClaimsPrincipal claimPrincipal = new ClaimsPrincipal(claimsIdentity);
 
             var authenticationProperties = new AuthenticationProperties();
             authenticationProperties.StoreTokens(new List<AuthenticationToken>()
