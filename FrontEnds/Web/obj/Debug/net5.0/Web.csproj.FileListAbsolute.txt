@@ -60,3 +60,10 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\F
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\Shared.pdb
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Web.csproj.AssemblyReference.cache
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
