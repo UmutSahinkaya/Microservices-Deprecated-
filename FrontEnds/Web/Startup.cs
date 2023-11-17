@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Web.Handler;
 using Web.Models;
 using Web.Services;
 using Web.Services.Interfaces;
@@ -37,7 +38,7 @@ namespace Web
             services.AddHttpClient<IUserService, UserService>(opt =>
             {
                 opt.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
-            });
+            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
