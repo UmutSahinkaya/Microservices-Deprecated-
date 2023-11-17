@@ -12,5 +12,6 @@ namespace Web.Models.Catalog
         public string UserId { get; set; }
         public FeatureViewModel Feature { get; set; }
         public string CategoryId { get; set; }
+        public CategoryViewModel Category { get; set; }
     }
 }
