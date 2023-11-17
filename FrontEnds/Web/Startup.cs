@@ -1,3 +1,4 @@
+using FreeCourse.Web.Handler;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -5,10 +6,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Web.Handler;
 using Web.Models;
 using Web.Services;
 using Web.Services.Interfaces;
@@ -32,6 +29,8 @@ namespace Web
             services.AddHttpContextAccessor();
             
             var serviceApiSettings =Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
+
+            services.AddScoped<ResourceOwnerPasswordTokenHandler>();
            
             services.AddHttpClient<IIdentityService, IdentityService>();
 

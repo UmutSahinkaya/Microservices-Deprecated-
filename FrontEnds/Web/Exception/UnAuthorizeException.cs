@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Runtime.Serialization;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Web.Exception
+namespace Web.Exceptions
 {
-    public class UnAuthorizeException : SystemException
+    public class UnAuthorizeException : Exception
     {
-        public UnAuthorizeException()
+        public UnAuthorizeException() : base()
         {
         }
 
@@ -13,7 +15,7 @@ namespace Web.Exception
         {
         }
 
-        public UnAuthorizeException(string message, System.Exception innerException) : base(message, innerException)
+        public UnAuthorizeException(string message, Exception innerException) : base(message, innerException)
         {
         }
     }
