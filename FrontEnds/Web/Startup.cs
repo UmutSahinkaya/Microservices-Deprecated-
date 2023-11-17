@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Shared.Services;
 using System;
 using Web.Models;
 using Web.Services;
@@ -31,7 +32,7 @@ namespace Web
             var serviceApiSettings =Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
-           
+            services.AddScoped<ISharedIdentityService,SharedIdentityService>();
             services.AddHttpClient<IIdentityService, IdentityService>();
             services.AddHttpClient<ICatalogService, CatalogService>(opt =>
             {
