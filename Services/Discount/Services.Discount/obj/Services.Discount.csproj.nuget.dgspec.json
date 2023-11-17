@@ -136,7 +136,7 @@
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
