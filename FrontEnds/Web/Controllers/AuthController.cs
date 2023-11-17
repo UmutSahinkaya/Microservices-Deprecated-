@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 using Web.Models;
@@ -23,21 +25,27 @@ namespace Web.Controllers
         [HttpPost]
         public async Task<IActionResult> SignIn(SigninInput signinInput)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View();
             }
-            var response= await _identityService.SignIn(signinInput);
+            var response = await _identityService.SignIn(signinInput);
             if (!response.IsSuccessful)
             {
                 response.Errors.ForEach(err =>
                 {
                     ModelState.AddModelError(String.Empty, err);
                 });
-                
-                return View();   
+
+                return View();
             }
             return RedirectToAction(nameof(Index), "Home");
+        }
+        public async Task<IActionResult> LogOut()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            await _identityService.RevokeRefreshToken();
+            return RedirectToAction(nameof(HomeController.Index), "Home");
         }
     }
 }
