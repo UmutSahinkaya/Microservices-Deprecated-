@@ -41,7 +41,7 @@ namespace Web.Controllers
             }
             return RedirectToAction(nameof(Index), "Home");
         }
-        public async Task<IActionResult> LogOut()
+        public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             await _identityService.RevokeRefreshToken();
