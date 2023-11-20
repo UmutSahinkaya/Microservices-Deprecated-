@@ -60,9 +60,7 @@ namespace Web.Services
             var response = await _httpClient.GetAsync("baskets");
 
             if (!response.IsSuccessStatusCode)
-            {
                 return null;
-            }
             var basketViewModel = await response.Content.ReadFromJsonAsync<Response<BasketViewModel>>();
 
             return basketViewModel.Data;
@@ -73,29 +71,20 @@ namespace Web.Services
             var basket = await Get();
 
             if (basket == null)
-
-            {
                 return false;
-            }
 
             var deleteBasketItem = basket.BasketItems.FirstOrDefault(x => x.CourseId == courseId);
 
             if (deleteBasketItem == null)
-            {
                 return false;
-            }
 
             var deleteResult = basket.BasketItems.Remove(deleteBasketItem);
 
             if (!deleteResult)
-            {
                 return false;
-            }
 
             if (!basket.BasketItems.Any())
-            {
                 basket.DiscountCode = null;
-            }
 
             return await SaveOrUpdate(basket);
         }
