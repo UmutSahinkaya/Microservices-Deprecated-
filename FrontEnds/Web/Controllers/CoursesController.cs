@@ -25,7 +25,7 @@ namespace Web.Controllers
             return View(await _catalogService.GetAllCourseByUserIdAsync(_sharedIdentityService.GetUserId));
         }
 
-        /* public async Task<IActionResult> Create()
+         public async Task<IActionResult> Create()
          {
              var categories = await _catalogService.GetAllCategoryAsync();
 
@@ -49,8 +49,8 @@ namespace Web.Controllers
 
              return RedirectToAction(nameof(Index));
          }
-        */
-        /*public async Task<IActionResult> Update(string id)
+        
+        public async Task<IActionResult> Update(string id)
         {
             var course = await _catalogService.GetByCourseId(id);
             var categories = await _catalogService.GetAllCategoryAsync();
@@ -88,6 +88,6 @@ namespace Web.Controllers
             await _catalogService.UpdateCourseAsync(courseUpdateInput);
 
             return RedirectToAction(nameof(Index));
-        }*/
+        }
     }
 }
