@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Shared.Services;
 using System;
+using Web.Handler;
 using Web.Models;
 using Web.Services;
 using Web.Services.Interfaces;
@@ -32,13 +33,15 @@ namespace Web
             var serviceApiSettings =Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
             services.AddHttpClient<IClientCredentialTokenService,ClientCredentialTokenService>();
+            services.AddScoped<ClientCredentialTokenHandler>();
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
             services.AddScoped<ISharedIdentityService,SharedIdentityService>();
             services.AddHttpClient<IIdentityService, IdentityService>();
+
             services.AddHttpClient<ICatalogService, CatalogService>(opt =>
             {
                 opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Catalog.Path}");
-            });
+            }).AddHttpMessageHandler<ClientCredentialTokenHandler>();
 
             services.AddHttpClient<IUserService, UserService>(opt =>
             {
