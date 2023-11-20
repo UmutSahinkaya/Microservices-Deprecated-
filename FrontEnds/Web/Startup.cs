@@ -29,13 +29,16 @@ namespace Web
             services.Configure<ClientSettings>(Configuration.GetSection("ClientSettings"));
             services.Configure<ServiceApiSettings>(Configuration.GetSection("ServiceApiSettings"));
             services.AddHttpContextAccessor();
-            
+            services.AddAccessTokenManagement();
+            services.AddScoped<ISharedIdentityService, SharedIdentityService>();
+
             var serviceApiSettings =Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
-            services.AddHttpClient<IClientCredentialTokenService,ClientCredentialTokenService>();
+            
             services.AddScoped<ClientCredentialTokenHandler>();
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
-            services.AddScoped<ISharedIdentityService,SharedIdentityService>();
+
+            services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();
             services.AddHttpClient<IIdentityService, IdentityService>();
 
             services.AddHttpClient<ICatalogService, CatalogService>(opt =>
