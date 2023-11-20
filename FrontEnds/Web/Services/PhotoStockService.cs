@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Shared.Dtos;
 using System;
 using System.IO;
 using System.Net.Http;
@@ -41,7 +42,8 @@ namespace Web.Services
             if (!response.IsSuccessStatusCode)
                 return null;
 
-            return await response.Content.ReadFromJsonAsync<PhotoViewModel>();
+            var responseSuccess= await response.Content.ReadFromJsonAsync<Response<PhotoViewModel>>();
+            return responseSuccess.Data;
         }
     }
 }
