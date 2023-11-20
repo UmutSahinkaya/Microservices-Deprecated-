@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Web.Exceptions;
 using Web.Models;
 using Web.Services.Interfaces;
 
@@ -29,9 +31,17 @@ namespace Web.Controllers
         {
             return View(await _catalogService.GetByCourseId(id));
         }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+            var errorFeature = HttpContext.Features.Get<IExceptionHandlerFeature>();
+
+            if (errorFeature != null && errorFeature.Error is UnAuthorizeException)
+            {
+                return RedirectToAction(nameof(AuthController.Logout), "Auth");
+            }
+
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
