@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Shared.Services;
 using System;
 using Web.Handler;
+using Web.Helpers;
 using Web.Models;
 using Web.Services;
 using Web.Services.Interfaces;
@@ -30,6 +31,7 @@ namespace Web
             services.Configure<ServiceApiSettings>(Configuration.GetSection("ServiceApiSettings"));
             services.AddHttpContextAccessor();
             services.AddAccessTokenManagement();
+            services.AddSingleton<PhotoHelper>();
             services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 
             var serviceApiSettings =Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
