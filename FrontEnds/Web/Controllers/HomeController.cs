@@ -15,6 +15,7 @@ namespace Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
         private readonly ICatalogService _catalogService;
 
         public HomeController(ILogger<HomeController> logger, ICatalogService catalogService)
@@ -27,6 +28,7 @@ namespace Web.Controllers
         {
             return View(await _catalogService.GetAllCourseAsync());
         }
+
         public async Task<IActionResult> Detail(string id)
         {
             return View(await _catalogService.GetByCourseId(id));

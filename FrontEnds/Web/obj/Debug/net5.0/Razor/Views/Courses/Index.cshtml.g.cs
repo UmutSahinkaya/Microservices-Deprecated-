@@ -33,8 +33,15 @@ using Web.Models.Catalog;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\Views\_ViewImports.cshtml"
+using Web.Models.Basket;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"3210582b40a6e5ee08be6d5322cdb845deabf3d0e96bb9e2ef91972ed3ccf136", @"/Views/Courses/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"f31f04c99af4fe7b7174149d1dbda7359b2f1f03c74457426397fdb003749e8e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA256", @"906e7308d66c677ccdb2a7dcb6e579eb1f807974d7e7c959195b4eb8c0ec5e99", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Courses_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<CourseViewModel>>
     #nullable disable
@@ -79,7 +86,7 @@ using Web.Models.Catalog;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5 class=\"card-title\">Kurslar</h5>\r\n\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3210582b40a6e5ee08be6d5322cdb845deabf3d0e96bb9e2ef91972ed3ccf1366337", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3210582b40a6e5ee08be6d5322cdb845deabf3d0e96bb9e2ef91972ed3ccf1366562", async() => {
                 WriteLiteral("Kurs oluştur");
             }
             );
@@ -170,7 +177,7 @@ WriteAttributeValue("", 1142, item.StockPictureUrl, 1142, 21, false);
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                                    <td>\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3210582b40a6e5ee08be6d5322cdb845deabf3d0e96bb9e2ef91972ed3ccf13610956", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3210582b40a6e5ee08be6d5322cdb845deabf3d0e96bb9e2ef91972ed3ccf13611181", async() => {
                 WriteLiteral("Güncelle");
             }
             );
@@ -204,7 +211,7 @@ WriteAttributeValue("", 1142, item.StockPictureUrl, 1142, 21, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3210582b40a6e5ee08be6d5322cdb845deabf3d0e96bb9e2ef91972ed3ccf13613552", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3210582b40a6e5ee08be6d5322cdb845deabf3d0e96bb9e2ef91972ed3ccf13613777", async() => {
                 WriteLiteral("Sil");
             }
             );

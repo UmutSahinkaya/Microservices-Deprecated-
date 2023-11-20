@@ -34,18 +34,17 @@ namespace Web
             services.AddSingleton<PhotoHelper>();
             services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 
-            services.AddScoped<ClientCredentialTokenHandler>();
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
+            services.AddScoped<ClientCredentialTokenHandler>();
 
             services.AddHttpClientServices(Configuration);
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
-                {
-                    opts.LoginPath = "/Auth/SignIn";
-                    opts.ExpireTimeSpan = TimeSpan.FromDays(60);
-                    opts.SlidingExpiration = true;
-                    opts.Cookie.Name = "webcookie";
-                });
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
+            {
+                opts.LoginPath = "/Auth/SignIn";
+                opts.ExpireTimeSpan = TimeSpan.FromDays(60);
+                opts.SlidingExpiration = true;
+                opts.Cookie.Name = "udemywebcookie";
+            });
 
             services.AddControllersWithViews();
         }
@@ -61,6 +60,7 @@ namespace Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
 
             app.UseRouting();
