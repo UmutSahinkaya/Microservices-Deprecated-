@@ -1,4 +1,4 @@
-using FreeCourse.Web.Handler;
+using Web.Handler;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -7,7 +7,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Shared.Services;
 using System;
-using Web.Handler;
 using Web.Helpers;
 using Web.Models;
 using Web.Services;

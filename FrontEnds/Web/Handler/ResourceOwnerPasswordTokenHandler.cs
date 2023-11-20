@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FreeCourse.Web.Handler
+namespace Web.Handler
 {
     public class ResourceOwnerPasswordTokenHandler : DelegatingHandler
     {

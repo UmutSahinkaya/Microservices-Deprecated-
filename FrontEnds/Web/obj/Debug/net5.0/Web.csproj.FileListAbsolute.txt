@@ -143,3 +143,4 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\F
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Razor\Views\Courses\Index.cshtml.g.cs
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Razor\Views\Courses\Create.cshtml.g.cs
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Razor\Views\Courses\Update.cshtml.g.cs
+C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Razor\Views\Home\Detail.cshtml.g.cs
