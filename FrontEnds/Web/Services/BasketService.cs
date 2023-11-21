@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using Web.Models.Basket;
+using Web.Models.Baskets;
 using Web.Services.Interfaces;
 
 namespace Web.Services

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Shared.Services;
 using System.Threading.Tasks;
-using Web.Models.Catalog;
+using Web.Models.Catalogs;
 using Web.Services.Interfaces;
 
 namespace Web.Controllers

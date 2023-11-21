@@ -1,6 +1,6 @@
 ﻿using Shared.Dtos;
 using Web.Helpers;
-using Web.Models.Catalog;
+using Web.Models.Catalogs;
 using Web.Services.Interfaces;
 using System.Collections.Generic;
 using System.Net.Http;

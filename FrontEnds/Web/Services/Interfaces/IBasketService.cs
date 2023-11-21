@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Web.Models.Basket;
+using Web.Models.Baskets;
 
 namespace Web.Services.Interfaces
 {

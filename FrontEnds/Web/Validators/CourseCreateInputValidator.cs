@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using Web.Models.Catalog;
+using Web.Models.Catalogs;
 
 namespace Web.Validators
 {

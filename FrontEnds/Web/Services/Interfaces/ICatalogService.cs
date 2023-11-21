@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Web.Models.Catalog;
+using Web.Models.Catalogs;
 
 namespace Web.Services.Interfaces
 {

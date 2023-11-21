@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
-using Web.Models.PhotoStock;
+using Web.Models.PhotoStocks;
 
 namespace Web.Services.Interfaces
 {

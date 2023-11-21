@@ -5,7 +5,7 @@ using System.IO;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using Web.Models.PhotoStock;
+using Web.Models.PhotoStocks;
 using Web.Services.Interfaces;
 
 namespace Web.Services
