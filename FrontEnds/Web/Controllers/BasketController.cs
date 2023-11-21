@@ -29,7 +29,8 @@ namespace Web.Controllers
         public async Task<IActionResult> AddBasketItem(string courseId)
         {
             var course = await _catalogService.GetByCourseId(courseId);
-
+            if (course == null)
+                return BadRequest(string.Empty);
             var basketItem = new BasketItemViewModel { CourseId = course.Id, CourseName = course.Name, Price = course.Price };
 
             await _basketService.AddBasketItem(basketItem);
