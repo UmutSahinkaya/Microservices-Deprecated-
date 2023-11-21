@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Web.Models.Basket
+namespace Web.Models.Baskets
 {
     public class BasketItemViewModel
     {

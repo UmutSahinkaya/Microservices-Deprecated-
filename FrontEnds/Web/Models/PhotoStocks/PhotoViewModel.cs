@@ -1,4 +1,4 @@
-﻿namespace Web.Models.PhotoStock
+﻿namespace Web.Models.PhotoStocks
 {
     public class PhotoViewModel
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Web.Models.Basket
+namespace Web.Models.Baskets
 {
     public class BasketViewModel
     {

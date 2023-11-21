@@ -145,6 +145,9 @@ C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\F
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Razor\Views\Courses\Update.cshtml.g.cs
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Razor\Views\Home\Detail.cshtml.g.cs
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\obj\Debug\net5.0\Razor\Views\Basket\Index.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\Umut.Sahinkaya\source\repos\UmutSahinkaya\Microservices\Microservices\FrontEnds\Web\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+=======
+>>>>>>> a19034dd6b54fb01a5fb327bfd54f44fdc058dc2

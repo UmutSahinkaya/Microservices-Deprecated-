@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 
-namespace Web.Models.Catalog
+namespace Web.Models.Catalogs
 {
-    public class CourseUpdateInput
+    public class CourseCreateInput
     {
-        public string Id { get; set; }
         [Display(Name = "Kurs ismi")]
         public string Name { get; set; }
 

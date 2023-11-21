@@ -1,4 +1,4 @@
-﻿namespace Web.Models.Catalog
+﻿namespace Web.Models.Catalogs
 {
     public class CategoryViewModel
     {
