@@ -14,7 +14,7 @@
       "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": [ "catalog_fullpermission" ]
+        "AllowedScopes": ["catalog_fullpermission"]
       }
     },
     {
@@ -94,7 +94,7 @@
           "Port": 5016
         }
       ],
-      "UpstreamPathTemplate": "/services/fakepayment/{everything}",
+      "UpstreamPathTemplate": "/services/payment/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "UpstreamScheme": "http",
       "AuthenticationOptions": {

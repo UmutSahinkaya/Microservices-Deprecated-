@@ -1,6 +1,5 @@
 ﻿using Services.Basket.Dtos;
 using Shared.Dtos;
-using System;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -25,12 +24,10 @@ namespace Services.Basket.Services
         {
             var existBasket = await _redisService.GetDb().StringGetAsync(userId);
 
-            if (String.IsNullOrEmpty(existBasket))
-            {
+            if (string.IsNullOrEmpty(existBasket))
                 return Response<BasketDto>.Fail("Basket not found", 404);
-            }
-
             return Response<BasketDto>.Success(JsonSerializer.Deserialize<BasketDto>(existBasket), 200);
+
         }
 
         public async Task<Response<bool>> SaveOrUpdate(BasketDto basketDto)

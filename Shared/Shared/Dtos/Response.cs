@@ -7,12 +7,12 @@ namespace Shared.Dtos
 {
     public class Response<T>
     {
-        public T Data { get; set; }
+        public T Data { get;private set; }
 
         [JsonIgnore]
-        public int StatusCode { get;  set; }
+        public int StatusCode { get; private set; }
         [JsonIgnore]
-        public bool IsSuccessful { get;  set; }
+        public bool IsSuccessful { get; private set; }
 
         public List<string> Errors { get; set; }
 

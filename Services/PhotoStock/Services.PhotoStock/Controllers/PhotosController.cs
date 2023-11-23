@@ -24,7 +24,7 @@ namespace Services.PhotoStock.Controllers
 
                 await photo.CopyToAsync(stream,cancellationToken);
 
-                var returnPath=photo.FileName;
+                var returnPath="photos/"+photo.FileName;
 
                 PhotoDto photoDto = new() { Url = returnPath };
 
